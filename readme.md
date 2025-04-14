@@ -1,22 +1,3 @@
-Here's a well-organized and professional `README.md` file for your project:
-
-```markdown
-# Bitcoin Tweets Database with DynamoDB
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Running the Project](#running-the-project)
-  - [Query Examples](#query-examples)
-- [Project Structure](#project-structure)
-- [Database Schema](#database-schema)
-- [Output](#output)
-- [Troubleshooting](#troubleshooting)
-- [Submission](#submission)
-- [License](#license)
-
 ## Project Overview
 This project implements a DynamoDB-based database to store and analyze Bitcoin-related tweets. It demonstrates:
 - Data cleaning and preprocessing
