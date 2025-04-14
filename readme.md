@@ -55,27 +55,6 @@ The system executes six analytical queries:
 5. Find tweets with most hashtags
 6. Cleanup: Remove low-follower users
 
-## Project Structure
-```
-DDE A1/
-├── dynamodb_local_latest/    # DynamoDB Local files
-├── scripts/
-│   ├── clean_csv.py          # Data cleaning script
-│   ├── create_subset.py      # Creates 50k row subset
-│   ├── create_table.py       # Table creation
-│   ├── insert_data.py        # Data insertion
-│   └── queries.py            # Query operations
-├── docs/
-│   ├── design_document.md    # Schema design
-│   └── README.md            # This file
-├── data/
-│   ├── bitcoin_tweets_dataset_2.csv          # Original data
-│   ├── bitcoin_tweets_dataset_2_cleaned.csv  # Cleaned data
-│   └── bitcoin_tweets_dataset_2_subset.csv   # 50k subset
-└── outputs/
-    ├── insert_log.txt        # Insertion log
-    └── output.txt           # Query results
-```
 
 ## Database Schema
 **Table**: BitcoinTweets  
@@ -91,45 +70,9 @@ DDE A1/
    - Partition: UserName
    - Sort: Followers (descending)
 
-## Output
-Results are saved in `output.txt` with UTF-8 encoding to properly display:
-- Query results
-- Execution statistics
-- Operation confirmations
 
 ## Troubleshooting
 - **Unicode Errors**: Use UTF-8 compatible editors
 - **DynamoDB Issues**: Ensure Java 8 is installed
 - **Query Problems**: Check `insert_log.txt` for data issues
 - **Reinserting Data**: Required after deletion operations
-
-## Submission
-Package includes:
-- All Python scripts
-- Design documentation
-- Output files
-- README (this file)
-
-Zip structure:
-```
-DDE_A1.zip/
-├── scripts/
-├── docs/
-├── outputs/
-└── README.md
-```
-
-## License
-This project is for academic purposes as part of the Distributed Data Engineering course. Dataset may have its own licensing requirements.
-```
-
-Key improvements:
-1. Better organization with clear sections
-2. More professional presentation
-3. Added visual directory structure
-4. Clearer installation/usage instructions
-5. Better formatting for readability
-6. Added license section
-7. Improved troubleshooting guidance
-
-The file maintains all your original content while presenting it in a more professional, standardized README format that's easier to navigate.
